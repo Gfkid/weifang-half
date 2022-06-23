@@ -1,0 +1,19 @@
+<!--pages/shenhe/shenhe.wxml-->
+<view wx:for="{{dataArray}}">
+<view>编号：{{index+1}}</view>
+<view>地址： {{item.descption}}</view>
+<view bindtap="copy" data-item='{{item._id}}'>id：{{item._id}}</view>
+<view>处理状态：{{item.chuli}}</view>
+<view>危房等级：{{item.dengji}}</view>
+<view>\n</view>
+<image src="{{item.imgURL}}"></image>
+<view class="button">
+
+</view>
+<view>\n</view>
+</view>
+<input placeholder="审核完不是危房请通过id删除它" bindinput="delDataId" value="{{recordID}}"></input>
+<button class="button1" bindtap="tongguo">删除</button>
+<input placeholder="请填写经过审核的危房id" bindinput="delDataId1" value="{{recordID1}}"></input>
+<input placeholder="请填写该危房等级" bindinput="delDataId2" value="{{recordID2}}"></input>
+<button class="button1" bindtap="yishenhe">上传审核结果</button>

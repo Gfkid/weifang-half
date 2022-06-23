@@ -1,0 +1,5 @@
+/* pages/Rlogin/Rlogin.wxss */
+.input{
+  border: 1px solid blue;
+  margin: 15rpx;
+}

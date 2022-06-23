@@ -1,0 +1,11 @@
+<!--pages/test/test.wxml-->
+<view class='quest_container' wx:for="{{quest}}" wx:key="id" wx:for-index="outterIndex">
+  <text>{{item.question}}{{item.type==1?'（单选）':'（多选）'}}</text>
+  <view wx:for="{{item.answers}}" wx:key="content" bindtap="answerSelected" data-outidx='{{outterIndex}}' data-idx="{{index}}" class="item {{item.selected?'active':''}}">
+    <text>{{item.index}}.</text>
+    <text> {{item.content}}</text>
+  </view>
+</view>
+<view class="submit_btn" bindtap="submit">提交</view>
+<view>你获得了{{totalScope}}分</view>
+<view style="color: brown;font-size: 50rpx;">超过50分被评为危房</view>

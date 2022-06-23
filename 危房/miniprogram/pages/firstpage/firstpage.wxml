@@ -1,0 +1,42 @@
+<swiper indicator-dots autoplay circular interval="3000" duration="800">
+  <swiper-item>
+    <image src="{{src1}}" style="width: 100%;"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="{{src2}}" style="width: 100%;"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="{{src3}}" style="width: 100%;"></image>
+  </swiper-item>
+</swiper>
+
+
+
+<view class="tubiao">
+  <view class="tuwen">
+   <image src="{{tubiao1}}" bindtap="gototest"></image>
+   <text bindtap="gototest">危房自测</text>
+  </view>
+  <view class="tuwen">
+   <image src="{{tubiao2}}" bindtap="gotoshangchuan"></image>
+   <text bindtap="gotoshangchuan">拍照上传</text>
+  </view>
+  <view class="tuwen">
+   <image src="{{tubiao3}}" bindtap="gotoshenhe"></image>
+   <text bindtap="gotoshenhe">审核危房</text>
+  </view>
+</view>
+
+<view wx:for="{{dataArray}}">
+<block wx:if="{{item.condition==1}}">
+  <view class="wenzi">
+    <view>地址： {{item.descption}}</view>
+    <view>处理状态：{{item.chuli}}</view>
+    <view>危房等级：{{item.dengji}}</view>
+    <view>id：{{item._id}}</view>
+    </view>
+<view>\n</view>
+<image src="{{item.imgURL}}" class="kuai"></image>
+</block>
+<view>\n</view>
+</view>

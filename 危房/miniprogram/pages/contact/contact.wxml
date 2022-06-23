@@ -1,0 +1,8 @@
+<!--pages/contact/contact.wxml-->
+<text class="message">如果你有任何关于危险建筑的疑问或者请求，欢迎您通过以下方式联系我们，我们的工作人员一定会在1-3个工作日内回复您！</text>
+<view class="text">
+<text class="words">手机号码：122222</text>
+<text class="words">QQ：24356133</text>
+<text class="words">微信：fjhssa112</text>
+<text class="words">邮箱：356415665@162.com</text>
+</view>

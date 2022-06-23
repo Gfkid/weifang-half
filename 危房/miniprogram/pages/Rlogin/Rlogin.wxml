@@ -1,0 +1,13 @@
+<!--pages/Rlogin/Rlogin.wxml-->
+<text>如果你是审核者，请登录您的审核者账号</text>
+<view>
+  <view class="block">
+    <input type="text" class="input" bindinput="getreviewername" placeholder="请输入您的审核者用户名"/>
+  </view>
+</view>
+<view>
+  <view class="block">
+    <input type="text" class="input" bindinput="getpassword" placeholder="请输入您的密码"/>
+  </view>
+</view>
+<button bindtap="userlogin" type="primary">登录</button>

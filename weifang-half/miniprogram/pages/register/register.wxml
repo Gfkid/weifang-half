@@ -1,0 +1,29 @@
+<!--pages/register/register.wxml-->
+<view>
+  <view class="block">
+    <text>输入用户名：</text>
+    <input type="text" class="input" bindinput="getname" />
+  </view>
+</view>
+
+<view>
+  <view class="block">
+    <text>输入用户账号：</text>
+    <input type="text" class="input" placeholder="手机号" bindinput="getzhanghao"/>
+  </view>
+</view>
+
+<view>
+  <view class="block"> 
+    <text>输入用户密码：</text>
+    <input type="text" class="input" bindinput="getpwd" />
+  </view>
+</view>
+<view>
+  <view class="block">
+    <text>再次输入用户密码：</text>
+    <input type="text" class="input" bindinput="getpwdagain"/>
+  </view>
+</view>
+<button type="primary" bindtap="zhuce">注册</button>
+<button bindtap="gotologin" style="font-size: small;">已有账号，去登录</button>

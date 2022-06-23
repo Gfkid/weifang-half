@@ -1,0 +1,26 @@
+<!--pages/page2/page2.wxml-->
+<view class="head">
+<button wx:if="{{!userInfo}}" type="primary" bindtap="login" class="login_btn">点击授权</button>
+<view wx:else class="root">
+<image src="{{userInfo.avatarUrl}}" class="touxiang"></image>
+<text class="nicheng">{{userInfo.nickName}}</text>
+<text bindtap="loginOut" class="loginout_btn">退出登录授权</text>
+</view>
+</view>
+
+
+<view class="item"  wx:if="{{!loginif}}">
+  <button class="button" bindtap="userlogin">用户登录</button>
+  <view class="right_arrow"></view>
+</view>
+<view class="item"  wx:if="{{loginif}}">
+  <text>你好，{{loginif.name}}，欢迎使用小程序</text>
+</view>
+<view class="item">
+  <button class="button" bindtap="contact">联系我们</button>
+  <view class="right_arrow"></view>
+</view>
+<view class="item">
+  <button class="button" bindtap="gotoRlogin">审核者认证</button>
+  <view class="right_arrow"></view>
+</view>

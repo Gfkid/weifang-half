@@ -1,0 +1,32 @@
+/* pages/firstpage/firstpage.wxss */
+.tubiao{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1rpx solid#efefef;
+  border-top: 1rpx solid#efefef;
+}
+.tuwen{
+  width: 32.33%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid#efefef;
+  border-bottom: 1rpx solid#efefef;
+}
+.tuwen image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.tuwen text{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.wenzi{
+  border: 2rpx solid#efefef;
+  padding:10rpx ;
+}
+.kuai{
+  margin-bottom: 50rpx;
+}

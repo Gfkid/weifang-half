@@ -1,0 +1,13 @@
+/* pages/contact/contact.wxss */
+.message{
+  font-size: large;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+}
+.words{
+  font-size: large;
+  font-style: italic;
+}

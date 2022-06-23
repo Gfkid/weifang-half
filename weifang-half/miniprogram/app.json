@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/firstpage/firstpage",
+    "pages/page2/page2",
+    "pages/contact/contact",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/Rlogin/Rlogin",
+    "pages/shenhe/shenhe",
+    "pages/shangchuan/shangchuan",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "危房小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png",
+        "pagePath": "pages/firstpage/firstpage",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message-active.png",
+        "pagePath": "pages/page2/page2",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
